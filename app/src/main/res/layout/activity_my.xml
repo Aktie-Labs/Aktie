@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="@drawable/splash_screen_background">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Proceed  "
+        android:id="@+id/proceedButton"
+        android:layout_gravity="center_horizontal"
+        android:filterTouchesWhenObscured="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/cube_container"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"></LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="AKTIE"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textColor="#ffcccccc"
+        android:textSize="35dp"
+        android:layout_below="@+id/cube_container"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Share with ease..."
+        android:id="@+id/textView2"
+        android:textColor="#ffb1b1b1"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/cube_container"
+        android:layout_alignEnd="@+id/cube_container"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:orientation="vertical"
+    android:background="@drawable/layout_dialog_bg"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/progressSpinner"
+            android:src="@drawable/ic_launcher"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scanning Devices"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/dialog_custom_title" />
+        </LinearLayout>
+
+
+
+    <WebView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/loadingImageView"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Wait"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="Reset"
+            android:textSize="10dp"
+            android:background="@drawable/dialog_button_bg"
+            android:id="@+id/dialog_custom_cancel"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="Done"
+            android:textSize="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/dialog_button_bg"
+            android:id="@+id/dialog_custom_done"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background3"
+    android:id="@+id/screen1fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            android:textColor="#FFFFFF"
+            android:id="@+id/scanButton"
+            android:background="@drawable/circular_button"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_vertical"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive"
+            android:textColor="#FFFFFF"
+            android:id="@+id/receiveButton"
+            android:background="@drawable/circular_button"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devices Found"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_marginTop="30dp"
+        android:id="@+id/devicesFoundTitle"
+        android:textSize="20dp"
+        android:textColor="#ffffff" />
+
+    <ListView
+        android:layout_marginTop="25dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/devicesList"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+</LinearLayout>

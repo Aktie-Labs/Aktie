@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Show History  "
+        android:id="@+id/historyButton"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal">
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gridView1"
+            android:numColumns="auto_fit"
+            android:gravity="center"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:columnWidth="100dp"
+            android:stretchMode="columnWidth"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp" >
+        </GridView>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear History"
+        android:id="@+id/clearHistoryButton"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
