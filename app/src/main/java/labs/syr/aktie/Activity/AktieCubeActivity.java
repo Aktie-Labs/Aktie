@@ -45,7 +45,7 @@ public class AktieCubeActivity extends Activity implements AktieCubeRender.Anima
         AktieCubeColor blue = new AktieCubeColor(0, 0, one);
         AktieCubeColor yellow = new AktieCubeColor(one, one, 0);
         AktieCubeColor orange = new AktieCubeColor(one, half, 0);
-        //AktieCubeColor white = new AktieCubeColor(one, one, one);
+        AktieCubeColor white = new AktieCubeColor(one, one, one);
         AktieCubeColor black = new AktieCubeColor(0, 0, 0);
 
         float c0 = -1.0f;

@@ -56,7 +56,7 @@ public class AktiePagerActivity extends FragmentActivity {
         //used to load the number of screens surrounding the current page*/
         //done for better animation betweem screens*/
         mPager.setOffscreenPageLimit(1);
-        getActionBar().setHomeButtonEnabled(true);
+        //getActionBar().setHomeButtonEnabled(true);
     }
 
 
