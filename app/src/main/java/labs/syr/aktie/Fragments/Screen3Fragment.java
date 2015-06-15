@@ -33,7 +33,7 @@ import labs.syr.aktie.R;
 
 /**
  * Date: 11/28/14.
- * Author: Bharath Darapu, Pranav Vasisth
+ * Author: Bharath Darapu
  * Purpose: Aktie project
  * File Name: Screen3Fragment.java
  * Description: Custome calendar implementation

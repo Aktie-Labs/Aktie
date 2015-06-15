@@ -28,7 +28,7 @@ import labs.syr.aktie.R;
 
 /**
  * Date: 11/28/14.
- * Author: Bharath Darapu, Pranav Vasisth
+ * Author: Bharath Darapu
  * Purpose: Aktie project
  * File Name: Screen1Fragment.java
  * Description: This fragment is the controller for the Holds the scan and receive actions

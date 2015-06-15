@@ -1,12 +1,11 @@
 package labs.syr.aktie.Activity;
 
-import android.content.BroadcastReceiver;
 import android.content.Intent;
-import android.net.wifi.p2p.WifiP2pManager;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -19,7 +18,7 @@ import labs.syr.aktie.Fragments.PersonalInfoFragment;
 import labs.syr.aktie.R;
 /**
  * Date: 11/28/14.
- * Author: Bharath Darapu, Pranav Vasisth
+ * Author: Bharath Darapu
  * Purpose: Aktie project
  * File Name: AktiePagerActivity.java
  * Description: activity in which our whole app runs and uses view pager.
@@ -27,7 +26,8 @@ import labs.syr.aktie.R;
  */
 
 
-public class AktiePagerActivity extends FragmentActivity {
+/*ActionBarActivity extends FragmentActivity as well so we need to extend only ActionBarActivity*/
+public class AktiePagerActivity extends ActionBarActivity {
 
     /*The pager widget, which handles animation and allows swiping horizontally to access previous
      * and next wizard steps.*/
@@ -48,7 +48,6 @@ public class AktiePagerActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         /*initializing the layout*/
         setContentView(R.layout.pager_container);
-
         /*setting th view pager*/
         mPager = (ViewPager) findViewById(R.id.pagerContainer);
         mPagerAdapter = new AktiePagerAdapter(getSupportFragmentManager());
@@ -56,14 +55,14 @@ public class AktiePagerActivity extends FragmentActivity {
         //used to load the number of screens surrounding the current page*/
         //done for better animation betweem screens*/
         mPager.setOffscreenPageLimit(1);
-        //getActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my, menu);
+        getMenuInflater().inflate(R.menu.action_bar_menu, menu);
         return true;
     }
 

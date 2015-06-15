@@ -8,6 +8,7 @@ import labs.syr.aktie.Fragments.Screen1Fragment;
 import labs.syr.aktie.Fragments.Screen2Fragment;
 import labs.syr.aktie.Fragments.Screen3Fragment;
 import labs.syr.aktie.Fragments.Screen4Fragment;
+import labs.syr.aktie.Fragments.TestScreenFragment;
 
 
 /**
@@ -50,6 +51,7 @@ public class AktiePagerAdapter extends FragmentStatePagerAdapter {
             case 3:
                 return new Screen4Fragment();
             default:
+                //return new TestScreenFragment();
                 return new Screen1Fragment();
         }
     }
