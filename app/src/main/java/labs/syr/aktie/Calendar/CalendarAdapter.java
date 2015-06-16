@@ -19,6 +19,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -156,9 +157,8 @@ public class CalendarAdapter extends BaseAdapter{
 
             /*reading the myPersonalInformation file which holds all the details for the user*/
             try {
-                FileInputStream fin = context
-                        .openFileInput("myPersonalInformation");
-                int c;
+				FileInputStream fin = context.openFileInput("myPersonalInformation");
+				int c;
                 String temp = "";
                 while ((c = fin.read()) != -1) {
                     temp = temp + Character.toString((char) c);
@@ -189,8 +189,11 @@ public class CalendarAdapter extends BaseAdapter{
                 }
             }catch (Exception ex)
             {
-                Log.e(className,"Loading events error: "+ex);
-            }
+
+				if (ex.getClass().toString().contains("FileNotFoundException"))
+					Toast.makeText(v.getContext(), "Please set personal information in settings", Toast.LENGTH_LONG);
+				Log.e(className, "Loading events error: " + ex.getClass());
+			}
 
             /*Setting the respective color based on the number of events in the day*/
 			if(day.getNumOfEvents() > 0){

@@ -26,7 +26,7 @@ import labs.syr.aktie.Fragments.TestScreenFragment;
 public class AktiePagerAdapter extends FragmentStatePagerAdapter {
 
     /*predefining the total number of screens the view pager will hold*/
-    private static final int NUM_SCREENS = 5;
+    private static final int NUM_SCREENS = 4;
 
     /*constructor which takes the support.fragment manager and passes it to super*/
     public AktiePagerAdapter(FragmentManager manager) {

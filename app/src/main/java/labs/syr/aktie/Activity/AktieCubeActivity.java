@@ -228,7 +228,7 @@ public class AktieCubeActivity extends Activity implements AktieCubeRender.Anima
         super.onCreate(savedInstanceState);
         //no title
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_landing_screen);
 
 
         LinearLayout cubecontainer = (LinearLayout) findViewById(R.id.cube_container);
